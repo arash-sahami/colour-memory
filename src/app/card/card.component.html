@@ -1,0 +1,12 @@
+  <div class="box" [hidden]="isDisabled" (click)="onClick()">
+  <div [ngClass]="isActive ? 'flip-card flip-card-active' : 'flip-card'">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img class="card-back-image" src="assets/card-back-side.png" alt="Backside" >
+        </div>
+        <div class="flip-card-back" [ngStyle]="{'background-color': color}">
+        </div>
+      </div>
+    </div>
+  </div>
+    

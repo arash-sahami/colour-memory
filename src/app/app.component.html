@@ -1,0 +1,10 @@
+<app-header></app-header>
+<app-score class="score"></app-score>
+<hr class="header"/>
+<div class="content">
+  <div class="wrapper">
+    <ng-template ngFor [ngForOf]="colors" let-i="index">
+      <app-card [color]="colors[i]" [id]="i"></app-card>
+    </ng-template>
+  </div>
+</div>
